@@ -54,10 +54,10 @@ body {
   color: #3F3F3F;
 }
 
-body * {
+/*body * {
   border: 0.2px dashed #333;
+}*/
 
-}
 /*
 ==========================
 TOP NAVBAR
@@ -125,27 +125,44 @@ section {
   padding: 0 90px;
 }
 
+.search-bar {
+  width: 590px;
+  height: 150%;
+  margin: 0 auto;
+}
+
 .btn-container {
   width: 590px;
   height: 58px;
-  margin: 0 auto;
+  margin: 15px auto;
   font-weight: 600;
 }
 
-.search-bar {
-  width: 590px;
-  margin: 0 auto;
-}
-
-
 .buttons {
   background: #F2F2F2;
-  color: #222222;
-  width: 126px;
+  color: #757575;
+  min-width: 126px;
   height: 36px;
   line-height: 36px;
+  border: 0;
   display: inline-block;
   margin:6px 3px;
+  font-weight: bold;
+  margin: 11px 4px;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.buttons:hover  {
+  color: #222222;
+  background: #F7F7F7;
+  background: -webkit-linear-gradient(#F1F1F1, #F7F7F7);
+  background:    -moz-linear-gradient(#F1F1F1, #F7F7F7);
+  background:         linear-gradient(#F1F1F1, #F7F7F7);
+  border-radius: 3px;
+  border: 1px solid #aaa;
 }
 
 .search-bar input {
@@ -155,6 +172,12 @@ section {
   padding: 3px;
 }
 
+/*
+==========================
+Bottom NavBar
+---------------------------------------------------
+*/
+
 footer {
   height: 40px;
   background: #F2F2F2;
@@ -162,6 +185,12 @@ footer {
   bottom: 0;
   left:0;
   right: 0;
+}
+
+footer a {
+  padding-left: 27px;
+  margin: 0;
+  color: #6C6C6C;
 }
 
 .left-nav-footer {
@@ -173,5 +202,6 @@ footer {
 .right-nav-footer {
   position: absolute;
   line-height: 40px;
+  margin-right: 27px;
   right: 0;
 }
