@@ -50,46 +50,62 @@ table {
 
 body {
   background: #fff;
-  margin: 0;
+  font: 13px arial, sans-serif;
+  color: #3F3F3F;
 }
 
+body * {
+  border: 0.2px dashed #333;
+
+}
 /*
 ==========================
 TOP NAVBAR
 ---------------------------------------------------
 */
-.top nav {
-  font: 200 13px/24px arial, sans-serif;
-  margin: 0;
-  padding: 0;
+header {
+  height: 35px;
+  width: 100%;
   position: relative;
+  top: 7px;
 }
 
-.top li {
-  display: inline-block;
-  margin: 0 5px;
-  vertical-align: middle;
-}
-
-.top ul {
+.top-right {
+  width:305px;
+  height:35px;
+  padding: 0;
   position: absolute;
-  right: 33px;
-  top: 17px;
+  right: 0;
+  text-align: center;
+  line-height: 10px;
 }
 
-.top a:hover {
+.top-right li {
+  display: inline-block;
+  padding: 0 3px;
+  vertical-align: middle;
+  height: 30px;
+}
+
+.top-right a:hover,
+footer a:hover {
   text-decoration: underline;
 }
 
-.top a {
+.top-right a,
+footer a  {
     color: #272727;
     text-decoration: none;
 }
 
-
-header nav img {
+.top-right img {
   height:30px;
   width: 30px;
+}
+
+.top-right img:last-child {
+  height:32px;
+  width: 33px;
 }
 /*
 ==========================
@@ -99,23 +115,63 @@ Section
 section img {
   height: 92px;
   width: 272px;
+  margin-bottom: 30px;
 }
-
 
 section {
-  position: relative;
-  margin: 40px 20px;
-  border: 1px solid #000;
+  text-align: center;
+  margin-top: 160px;
+  margin-bottom: 90px;
+  padding: 0 90px;
 }
 
-.logo{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 550px;
+.btn-container {
+  width: 590px;
+  height: 58px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.search-bar {
+  width: 590px;
+  margin: 0 auto;
+}
+
+
+.buttons {
+  background: #F2F2F2;
+  color: #222222;
+  width: 126px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  margin:6px 3px;
+}
+
+.search-bar input {
+  font-size: 26px;
+  height: 38px;
+  width: 545px;
+  padding: 3px;
 }
 
 footer {
+  height: 40px;
+  background: #F2F2F2;
+  position: absolute;
   bottom: 0;
-  display: block;
+  left:0;
+  right: 0;
+}
+
+.left-nav-footer {
+  position: absolute;
+  line-height: 40px;
+  left: 0;
+  }
+
+.right-nav-footer {
+  position: absolute;
+  line-height: 40px;
+  right: 0;
 }
