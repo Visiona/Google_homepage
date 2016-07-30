@@ -67,7 +67,7 @@ header {
   height: 35px;
   width: 100%;
   position: relative;
-  top: 7px;
+  top: 10px;
 }
 
 .top-right {
@@ -77,12 +77,12 @@ header {
   position: absolute;
   right: 0;
   text-align: center;
-  line-height: 10px;
+  line-height: 35px;
 }
 
 .top-right li {
   display: inline-block;
-  padding: 0 3px;
+  padding: 0 5px;
   vertical-align: middle;
   height: 30px;
 }
@@ -127,8 +127,17 @@ section {
 
 .search-bar {
   width: 590px;
-  height: 150%;
   margin: 0 auto;
+}
+
+.search-engine {
+  font: 200 16px/22px;
+  border: 1px solid #c6c9cc;
+  border-radius: 5px;
+  color: #888;
+  display: block;
+  margin: 5px 0 27px 0;
+  padding: 5px 8px;
 }
 
 .btn-container {
@@ -168,7 +177,7 @@ section {
 .search-bar input {
   font-size: 26px;
   height: 38px;
-  width: 545px;
+  width: 600px;
   padding: 3px;
 }
 
